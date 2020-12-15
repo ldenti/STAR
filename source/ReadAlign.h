@@ -21,6 +21,7 @@
 class ReadAlign {
     public:
         ReadAlign (Parameters& Pin, Genome &genomeIn, Transcriptome *TrIn, int iChunk);//allocate arrays
+        ~ReadAlign();
         int oneRead();
 
         Genome &mapGen, &genOut; //mapped-to-genome structure
